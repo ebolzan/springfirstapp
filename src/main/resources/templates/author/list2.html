@@ -1,0 +1,26 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" 
+          href="../../css/gtvg.css"  />
+  </head>
+
+  <body>
+  
+    <table>
+    	<th>Name</th> <th>s</th> <th>book</th></tr>
+    	<tr th:each="author : ${authors}">
+    	<td th:text="${author.id}"></td> 
+    	<td th:text="${author.firstName}">Title</td> 
+    	<td th:text="${author.books[0].title}">Puslisher</td>
+    	</tr>
+    </table>
+  
+  </body>
+
+</html>
